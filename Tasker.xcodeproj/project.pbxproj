@@ -16,6 +16,7 @@
 		DAA0B85124C2F403004380DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0B84F24C2F403004380DA /* LaunchScreen.storyboard */; };
 		DAA0B85C24C2F403004380DA /* TaskerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B85B24C2F403004380DA /* TaskerTests.swift */; };
 		DAA0B86724C2F403004380DA /* TaskerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B86624C2F403004380DA /* TaskerUITests.swift */; };
+		DAA0B87724C2F421004380DA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA0B87624C2F421004380DA /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		DAA0B86224C2F403004380DA /* TaskerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0B86624C2F403004380DA /* TaskerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerUITests.swift; sourceTree = "<group>"; };
 		DAA0B86824C2F403004380DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA0B87424C2F41E004380DA /* Tasker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasker.entitlements; sourceTree = "<group>"; };
+		DAA0B87624C2F421004380DA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA0B87724C2F421004380DA /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				DAA0B85A24C2F403004380DA /* TaskerTests */,
 				DAA0B86524C2F403004380DA /* TaskerUITests */,
 				DAA0B83F24C2F401004380DA /* Products */,
+				DAA0B87524C2F421004380DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +106,7 @@
 		DAA0B84024C2F401004380DA /* Tasker */ = {
 			isa = PBXGroup;
 			children = (
+				DAA0B87424C2F41E004380DA /* Tasker.entitlements */,
 				DAA0B84124C2F401004380DA /* AppDelegate.swift */,
 				DAA0B84324C2F401004380DA /* SceneDelegate.swift */,
 				DAA0B84824C2F401004380DA /* ContentView.swift */,
@@ -137,6 +143,14 @@
 				DAA0B86824C2F403004380DA /* Info.plist */,
 			);
 			path = TaskerUITests;
+			sourceTree = "<group>";
+		};
+		DAA0B87524C2F421004380DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA0B87624C2F421004380DA /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tasker/Tasker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Tasker/Preview Content\"";
 				DEVELOPMENT_TEAM = JGAK84FR2Q;
@@ -458,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Tasker/Tasker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Tasker/Preview Content\"";
 				DEVELOPMENT_TEAM = JGAK84FR2Q;
