@@ -17,6 +17,17 @@
 		DAA0B85C24C2F403004380DA /* TaskerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B85B24C2F403004380DA /* TaskerTests.swift */; };
 		DAA0B86724C2F403004380DA /* TaskerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B86624C2F403004380DA /* TaskerUITests.swift */; };
 		DAA0B87724C2F421004380DA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA0B87624C2F421004380DA /* CloudKit.framework */; };
+		DAA0B87A24C2F628004380DA /* convertcsv-3.csv in Resources */ = {isa = PBXBuildFile; fileRef = DAA0B87924C2F628004380DA /* convertcsv-3.csv */; };
+		DAA0B87C24C2F643004380DA /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B87B24C2F643004380DA /* StopWatch.swift */; };
+		DAA0B88124C2F653004380DA /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B87D24C2F653004380DA /* Hands.swift */; };
+		DAA0B88224C2F653004380DA /* Reports.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B87E24C2F653004380DA /* Reports.swift */; };
+		DAA0B88324C2F653004380DA /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B87F24C2F653004380DA /* Entry.swift */; };
+		DAA0B88424C2F653004380DA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B88024C2F653004380DA /* Settings.swift */; };
+		DAA0B88624C2F6AD004380DA /* CloudKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B88524C2F6AD004380DA /* CloudKitHelper.swift */; };
+		DAA0B88824C2F722004380DA /* GetDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B88724C2F722004380DA /* GetDate.swift */; };
+		DAA0B88A24C2F728004380DA /* TaskEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B88924C2F727004380DA /* TaskEntries.swift */; };
+		DAA0B88C24C2F72E004380DA /* ListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B88B24C2F72E004380DA /* ListElement.swift */; };
+		DAA0B88E24C2F737004380DA /* RecordImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0B88D24C2F737004380DA /* RecordImport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +65,17 @@
 		DAA0B86824C2F403004380DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA0B87424C2F41E004380DA /* Tasker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tasker.entitlements; sourceTree = "<group>"; };
 		DAA0B87624C2F421004380DA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DAA0B87924C2F628004380DA /* convertcsv-3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "convertcsv-3.csv"; sourceTree = "<group>"; };
+		DAA0B87B24C2F643004380DA /* StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		DAA0B87D24C2F653004380DA /* Hands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hands.swift; sourceTree = "<group>"; };
+		DAA0B87E24C2F653004380DA /* Reports.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reports.swift; sourceTree = "<group>"; };
+		DAA0B87F24C2F653004380DA /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		DAA0B88024C2F653004380DA /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		DAA0B88524C2F6AD004380DA /* CloudKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitHelper.swift; sourceTree = "<group>"; };
+		DAA0B88724C2F722004380DA /* GetDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDate.swift; sourceTree = "<group>"; };
+		DAA0B88924C2F727004380DA /* TaskEntries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEntries.swift; sourceTree = "<group>"; };
+		DAA0B88B24C2F72E004380DA /* ListElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListElement.swift; sourceTree = "<group>"; };
+		DAA0B88D24C2F737004380DA /* RecordImport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordImport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,14 +128,25 @@
 		DAA0B84024C2F401004380DA /* Tasker */ = {
 			isa = PBXGroup;
 			children = (
+				DAA0B87824C2F606004380DA /* External Data */,
 				DAA0B87424C2F41E004380DA /* Tasker.entitlements */,
+				DAA0B87D24C2F653004380DA /* Hands.swift */,
+				DAA0B87E24C2F653004380DA /* Reports.swift */,
+				DAA0B88024C2F653004380DA /* Settings.swift */,
+				DAA0B88724C2F722004380DA /* GetDate.swift */,
+				DAA0B87F24C2F653004380DA /* Entry.swift */,
 				DAA0B84124C2F401004380DA /* AppDelegate.swift */,
 				DAA0B84324C2F401004380DA /* SceneDelegate.swift */,
 				DAA0B84824C2F401004380DA /* ContentView.swift */,
+				DAA0B88924C2F727004380DA /* TaskEntries.swift */,
+				DAA0B88B24C2F72E004380DA /* ListElement.swift */,
+				DAA0B88D24C2F737004380DA /* RecordImport.swift */,
 				DAA0B84A24C2F403004380DA /* Assets.xcassets */,
 				DAA0B84F24C2F403004380DA /* LaunchScreen.storyboard */,
+				DAA0B88524C2F6AD004380DA /* CloudKitHelper.swift */,
 				DAA0B85224C2F403004380DA /* Info.plist */,
 				DAA0B84524C2F401004380DA /* Tasker.xcdatamodeld */,
+				DAA0B87B24C2F643004380DA /* StopWatch.swift */,
 				DAA0B84C24C2F403004380DA /* Preview Content */,
 			);
 			path = Tasker;
@@ -151,6 +184,14 @@
 				DAA0B87624C2F421004380DA /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAA0B87824C2F606004380DA /* External Data */ = {
+			isa = PBXGroup;
+			children = (
+				DAA0B87924C2F628004380DA /* convertcsv-3.csv */,
+			);
+			path = "External Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +301,7 @@
 				DAA0B85124C2F403004380DA /* LaunchScreen.storyboard in Resources */,
 				DAA0B84E24C2F403004380DA /* Preview Assets.xcassets in Resources */,
 				DAA0B84B24C2F403004380DA /* Assets.xcassets in Resources */,
+				DAA0B87A24C2F628004380DA /* convertcsv-3.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +328,18 @@
 			files = (
 				DAA0B84724C2F401004380DA /* Tasker.xcdatamodeld in Sources */,
 				DAA0B84224C2F401004380DA /* AppDelegate.swift in Sources */,
+				DAA0B87C24C2F643004380DA /* StopWatch.swift in Sources */,
 				DAA0B84924C2F401004380DA /* ContentView.swift in Sources */,
+				DAA0B88324C2F653004380DA /* Entry.swift in Sources */,
+				DAA0B88A24C2F728004380DA /* TaskEntries.swift in Sources */,
+				DAA0B88824C2F722004380DA /* GetDate.swift in Sources */,
+				DAA0B88C24C2F72E004380DA /* ListElement.swift in Sources */,
+				DAA0B88124C2F653004380DA /* Hands.swift in Sources */,
+				DAA0B88424C2F653004380DA /* Settings.swift in Sources */,
+				DAA0B88224C2F653004380DA /* Reports.swift in Sources */,
+				DAA0B88624C2F6AD004380DA /* CloudKitHelper.swift in Sources */,
 				DAA0B84424C2F401004380DA /* SceneDelegate.swift in Sources */,
+				DAA0B88E24C2F737004380DA /* RecordImport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
